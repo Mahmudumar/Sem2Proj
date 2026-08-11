@@ -1,0 +1,23 @@
+<!ELEMENT
+        student (
+        name,
+        department,
+        category,
+        level,
+        graduationYear,
+        generatedDateTime,
+        courses
+        )>
+
+<!ATTLIST student id CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT department (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT level (#PCDATA)>
+<!ELEMENT graduationYear (#PCDATA)>
+<!ELEMENT generatedDateTime (#PCDATA)>
+<!ELEMENT courses (course+)>
+<!ELEMENT course (title,score)>
+<!ATTLIST course code CDATA #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT score (#PCDATA)>
