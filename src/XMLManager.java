@@ -397,8 +397,7 @@ public class XMLManager {
                     "Title: " +
                             course.getElementsByTagName("title")
                                     .item(0)
-                                    .getTextContent()
-            );
+                                    .getTextContent());
 
             System.out.println(
                     "Score: " +
