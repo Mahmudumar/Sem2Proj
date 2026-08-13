@@ -1,0 +1,31 @@
+========================================
+UNIVERSITY ACADEMIC RECORD SYSTEM
+========================================
+
+Date of Report: 2026-08-13
+Time of Report: 23:34:51.311466800
+
+Generating XML.............SUCCESS
+
+Validating XML............SUCCESS
+
+Parsing XML............SUCCESS
+
+Student ID: Student1643702
+Department: Cyber Security
+Category: Direct Entry Student
+Level : 300
+
+Courses Taken: 6
+
+Average Score: 42.833333333333336
+
+GPA: 0.0
+
+
+Threads Executed Successfully
+
+Student Report Generated
+
+Program Completed Successfully
+

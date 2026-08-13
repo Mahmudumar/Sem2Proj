@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE student SYSTEM "student.dtd">
+<student id="Student1643702">
+    <name>umar</name>
+    <department>Cyber Security</department>
+    <category>Direct Entry Student</category>
+    <level>300</level>
+    <graduationYear>2028</graduationYear>
+    <generatedDateTime>2026-08-13T23:34:26.094173500</generatedDateTime>
+    <courses>
+        <course code="CSC301">
+            <title>Java Programming</title>
+            <score>54</score>
+        </course>
+        <course code="CSC302">
+            <title>Data Structures</title>
+            <score>46</score>
+        </course>
+        <course code="CSC303">
+            <title>Database Systems</title>
+            <score>34</score>
+        </course>
+        <course code="CSC304">
+            <title>Operating Systems</title>
+            <score>16</score>
+        </course>
+        <course code="CSC305">
+            <title>Computer Networks</title>
+            <score>58</score>
+        </course>
+        <course code="CSC306">
+            <title>Software Engineering</title>
+            <score>49</score>
+        </course>
+    </courses>
+</student>
