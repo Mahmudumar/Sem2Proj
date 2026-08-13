@@ -80,7 +80,7 @@ public class Student extends Person implements ResultProcessor{
 
     static int get_sum_of_digits(List<Integer> studentID){
         int sum_of_digits = 0;
-        for (int i = 0; i < studentID.toArray().length; i++) {
+        for (int i = 0; i < studentID.size(); i++) {
             sum_of_digits+=studentID.get(i);
         }
         return sum_of_digits;
@@ -128,9 +128,6 @@ public class Student extends Person implements ResultProcessor{
 //        System.out.println(studentID);
 
         int last_digit2 = studentID.get(studentID.size() - 2); // get the second to the last
-//        System.out.println(studentID);
-
-        studentID.add(last_digit);
 //        System.out.println(studentID);
 
 
@@ -202,7 +199,7 @@ public class Student extends Person implements ResultProcessor{
     @Override
     public void calculateFinalGPA() {
         double total = 0;
-        for (int i = 0; i < courses.toArray().length; i++) {
+        for (int i = 0; i < courses.size(); i++) {
             total += Double.parseDouble(courses.get(i).getScore());
         }
 //        Stuck at the final place, don't know how to calculate GPA and time's up!!
@@ -211,7 +208,7 @@ public class Student extends Person implements ResultProcessor{
     }
     public double getAverageScore(){
         double total = 0;
-        for (int i = 0; i < courses.toArray().length; i++) {
+        for (int i = 0; i < courses.size(); i++) {
             total += Double.parseDouble(courses.get(i).getScore());
         }
         return total / this.numberOfCourses;
