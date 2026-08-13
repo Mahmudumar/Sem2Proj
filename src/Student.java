@@ -39,7 +39,7 @@ public class Student extends Person implements ResultProcessor{
     }
 //    Student ID rules methods: calculate just from studentID
     public List<Course> getMasterCourses() throws Exception {
-
+        if (!courses.isEmpty()) {return courses;}
 
         String file = "master_courses.csv";
         String line;
