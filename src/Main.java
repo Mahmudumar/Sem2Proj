@@ -4,9 +4,10 @@ import java.io.IOException;
 import java.util.Vector;
 
 class Main{
-    static void main() throws Exception {
+    public static void main(String[] args) throws Exception{
+        
 //        thread safe way of logging to StudentReport.txt
-        Vector finalReportInfo = new Vector();
+        Vector<String> finalReportInfo = new Vector();
 
         Student studentObj = new Student("Student1643702","umar");
 
