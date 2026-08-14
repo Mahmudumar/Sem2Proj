@@ -199,12 +199,11 @@ public class Student extends Person implements ResultProcessor{
     @Override
     public void calculateFinalGPA() {
         double total = 0;
-        for (int i = 0; i < courses.size(); i++) {
-            total += Double.parseDouble(courses.get(i).getScore());
+        for (Course course : courses) {
+            total += Double.parseDouble(course.getScore());
         }
-//        Stuck at the final place, don't know how to calculate GPA and time's up!!
-
-        this.GPA = total;
+    
+        this.GPA = total / courses.size();
     }
     public double getAverageScore(){
         double total = 0;
