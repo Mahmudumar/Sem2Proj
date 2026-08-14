@@ -52,7 +52,7 @@ The next thread to run immediately after the XML file `student.xml` has been cre
 Then we end with the last thread, which takes all the information stored in the `Vector` above and writes all that cleanly into a `StudentReport.txt` file. The format of this file is specified by the instructor as well.
 
 
-## Purpose
+## Technologies Used
 
 It is a Java project, so durrh.
 
