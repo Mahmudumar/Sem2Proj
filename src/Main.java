@@ -9,7 +9,18 @@ class Main{
 //        thread safe way of logging to StudentReport.txt
         Vector<String> finalReportInfo = new Vector();
 
-        Student studentObj = new Student("Student1643702","umar");
+
+        // Ask for ID and name
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Welcome to the Academic Record.");
+        System.out.print("Enter student ID: ");
+        String studentID = scanner.nextLine();
+        
+        System.out.print("Enter student Name: ");
+        String studentName = scanner.nextLine();
+
+        Student studentObj = new Student(studentID, studentName);
 
         Thread gpaCalc = new Thread(()->{
             try {
@@ -62,17 +73,15 @@ class Main{
             }
         });
 
+        gpaCalc.start();
 
-
+        // XML Validation, needs the xml file to succeed.
         XMLGen.start();
         XMLGen.join();
-
         XMLValidateAndParsing.start();
         XMLValidateAndParsing.join();
 
-        gpaCalc.start();
-        gpaCalc.join();
-
+    
         ReportGen.start();
         ReportGen.join();
     }
